@@ -159,7 +159,7 @@ The linux binaries on the website are created using the generic makefile,
 not the configure script.  The windows binaries on the website are created
 using MinGW32 configured as a cross-compiler running under Linux.  For 
 details, see the ./publish.sh script at the top-level of the source tree.
-The developers do not use teh configure script.
+The developers do not use the configure script.
 
 SQLite does not require TCL to run, but a TCL installation is required
 by the makefiles.  SQLite contains a lot of generated code and TCL is
@@ -217,7 +217,7 @@ accessory programs such as "sqlite3_analyzer(.exe)".
 ### Generated Source Code Files
 
 Several of the C-language source files used by SQLite are generated from
-other sources rather than being typed in manually by a programmer.  This
+other sources rather than being typed in manually by a programmar.  This
 section will summarize those automatically-generated files.  To create all
 of the automatically-generated files, simply run "make target&#95;source".
 The "target&#95;source" make target will create a subdirectory "tsrc/" and
@@ -312,7 +312,7 @@ Key files:
   *  **sqliteInt.h** - this header file defines many of the data objects
      used internally by SQLite.
 
-  *  **parse.y** - This file describes the LALR(1) grammer that SQLite uses
+  *  **parse.y** - This file describes the LALR(1) grammar that SQLite uses
      to parse SQL statements, and the actions that are taken at each stop
      in the parsing process.
 
